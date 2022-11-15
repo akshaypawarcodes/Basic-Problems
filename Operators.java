@@ -9,3 +9,4 @@ public class Operators {
         System.out.println(j);
     }
 }
+//OutPut- i=12,j=-2
