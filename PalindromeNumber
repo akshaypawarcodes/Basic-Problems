@@ -1,12 +1,19 @@
-class Solution {
-    public boolean isPalindrome(int x) {
-        String str=String.valueOf(x);
-        StringBuilder RevStr=new StringBuilder();
-        RevStr.append(str);
-        RevStr.reverse();
-        if(RevStr.toString().equals(str)){
-            return true;
+class HelloWorld {
+    public static void main(String[] args) {
+        int n = 121; 
+        int temp = n;
+        int rev = 0; 
+        
+        while (temp != 0) {
+            int rem = temp % 10; 
+            rev = rev * 10 + rem;
+            temp = temp / 10; 
         }
-        return false;        
+        
+        if (n == rev) {
+            System.out.println("number is palindrome");
+        } else {
+            System.out.println("number is not palindrome");
+        }
     }
 }
